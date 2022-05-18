@@ -3,34 +3,49 @@
   box-sizing: border-box;
 }
 
-/* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
-
-.clear {
-	clear: both;
-}
 
 /******************************************
 /* BASE STYLES
 /*******************************************/
-
-body {
-
+.title{
+  border: 1px solid black;
+  text-align: center;
 }
-
-
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-
-/******************************************
-/* ADDITIONAL STYLES
-/*******************************************/
+.page{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.woPicture{
+  grid-column: 1;
+  border: 1px solid black; 
+  height: 32rem;
+}
+.woButtons{
+  grid-column: 2;
+  border: 1px solid black; 
+  justify-items: center;
+  align-items: center;
+  display: grid;
+  height: 15rem;
+  grid-template-rows: (3);
+}
+#button1{
+ height: 3rem;
+ width: 15rem;
+ grid-row: 1;
+ border-radius: 7%;
+}
+#button2{
+ height: 3rem;
+ grid-row: 2;
+ width: 15rem;
+ border-radius: 7%;
+}
+#button3{
+ height: 3rem;
+ grid-row: 3;
+ width: 15rem;
+ border-radius: 7%;
+}

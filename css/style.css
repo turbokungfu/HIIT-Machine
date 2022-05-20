@@ -8,10 +8,10 @@
 /* BASE STYLES
 /*******************************************/
 body{
-  background-color: aqua;
+  background-color: #A0B3BA;
 }
 .title{
-  border: 1px solid black;
+  color: #2E2C2F;
   text-align: center;
 }
 .page{
@@ -23,8 +23,9 @@ body{
 .woPicture{
   grid-column: 1;
   grid-row: 1 / 4;
-  border: 1rem solid black; 
+  border: 1rem solid #2E2C2F; 
   padding: 2rem;
+  margin-left: 1rem;
   border-radius: 5%;
 }
 .woButtons{
@@ -34,6 +35,12 @@ body{
   justify-items: center;
   align-items: center;
   height: 15rem;
+}
+.button{
+  background-color: #F3E8EE;
+}
+.button:hover{
+  background-color: #729B79;
 }
 #button1{
  height: 3rem;
@@ -54,7 +61,10 @@ body{
  border-radius: 7%;
 }
 .explain{
+  background-color: #bacdb0;
   grid-column: 2;
   grid-row: 2; 
   padding: 3rem;
+  border-radius: 5%;
+  margin: 2rem;
 }

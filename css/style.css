@@ -20,6 +20,9 @@ body{
   grid-template-rows: 50% 50%;
   gap: 10px;
 }
+#woWindow{
+  max-width: 100%;
+}
 .woPicture{
   grid-column: 1;
   grid-row: 1 / 4;

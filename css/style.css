@@ -7,17 +7,22 @@
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
 body{
   background-color: #A0B3BA;
 }
+.top{
+  background-color: #729B79;
+  align-items: center;
+  text-align: center;
+}
 .title{
   color: #2E2C2F;
-  text-align: center;
 }
 .page{
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
+  grid-template-rows: 20% 45% 45%;
   gap: 10px;
 }
 #woWindow{
@@ -40,34 +45,29 @@ body{
   height: 15rem;
 }
 .button{
+  height: 3rem;
+  width: 15rem;
+  border-radius: 7%;
   background-color: #F3E8EE;
 }
 .button:hover{
   background-color: #729B79;
 }
-#button1{
- height: 3rem;
- width: 15rem;
- grid-row: 1;
- border-radius: 7%;
-}
-#button2{
- height: 3rem;
- grid-row: 2;
- width: 15rem;
- border-radius: 7%;
-}
-#button3{
- height: 3rem;
- grid-row: 3;
- width: 15rem;
- border-radius: 7%;
-}
 .explain{
   background-color: #bacdb0;
   grid-column: 2;
-  grid-row: 2; 
+  grid-row: 3; 
   padding: 3rem;
   border-radius: 5%;
   margin: 2rem;
+}
+
+/*Workout Builder*/
+.buildLeft{
+  grid-column: 1;
+  grid-row: 1 / 4;
+}
+.buildRight{
+  grid-column: 2;
+  grid-row: 1 / 4;
 }
